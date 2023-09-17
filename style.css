@@ -1,3 +1,42 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    width: 100%;
+    overflow: hidden;
+    height: 80px;
+    margin: 50px auto;
+
+}
+
+#nav1 {
+    text-align: center;
+}
+
+#nav1 > ul {
+    display: inline-block;
+}
+
+#nav1 > ul li{
+    float: left;
+    padding: 0 30px;
+    line-height: 80px;
+}
+
+#nav1 > ul li:hover{
+    background-color: antiquewhite;
+}
+
 #header {
     position: relative;
     width: 100%;
@@ -9,18 +48,27 @@
 h1 {
     text-align: center;
 }
+#lunchbox {
+    display: block;
+}
+#lunchtable {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    width: 100%;
+}
 
 #menu {
     position: relative;
-    white-space: nowrap;
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1000px ;
     height: 300px;
     margin: 0 auto;
-    margin-top: 30px;
-    overflow-x: scroll;
 }
 
-#menu::-webkit-scrollbar-track{
+#lunchtable::-webkit-scrollbar-track{
     -webkit-box-shadow:
     inset 0 0 6px
     rgba(0,0,0,0.3);
@@ -29,13 +77,13 @@ h1 {
 
 }
 
-#menu::-webkit-scrollbar
+#lunchtable::-webkit-scrollbar
 {
 	width: 10px;
 	background-color: #F5F5F5;
 }
 
-#menu::-webkit-scrollbar-thumb
+#lunchtable::-webkit-scrollbar-thumb
 {
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
@@ -43,13 +91,52 @@ h1 {
 }
 
 .lunch {
+    flex: auto;
+    flex-wrap: nowrap;
     margin: 10px 10px 10px 10px;
     padding-left: 0;
-    display: inline-block;
     padding-right: 0;
-    width: 200px;
+    width: 150px;
     height: 250px;
     background-color: rgba(182, 182, 182, 0.729);
     border-radius: 10px;
     text-align: center;
+    border: solid 1px black;
+}
+
+.dday {
+    margin: 0 auto;
+    height: 40px;
+    width: auto;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: solid 1px black;
+}
+
+#suggestion {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+#suggestion > p {
+    margin-bottom: 0;
+    padding-top: 50px;
+}
+
+.intext {
+    margin-top: 20px;
+}
+
+
+#array {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#date {
+    font-size: 30px;
+    font-weight: 500;
 }

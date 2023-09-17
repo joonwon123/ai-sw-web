@@ -15,48 +15,73 @@
 
 <body>
     <div id="header">
-        <h1>급식충(忠)</h1>
+        <h1>당곡고 급식</h1>
     </div>
-    <div>
-        <div id="menu">
-            <div class="lunch">
-                <div class="date">
 
+
+    <div id="array">
+                <div id="date">
+                    
                 </div>
+                <p>급식 순서 : 1반 - 2반 - 3반</p> 
             </div>
-            <div class="lunch">
-                <div class="date">
 
+    <nav id="nav1">
+        <ul>
+            <li id="goLunch">급식 안내</li>
+            <li id="goSug">급식 추천</li>
+        </ul>
+    </nav>
+
+
+    <section id="lunchbox">
+        
+        <div id="lunchtable">
+            <div id="menu"><!--급식 메뉴 안내-->
+                <div class="lunch">
+                    <div class="dday">
+                        D-day
+                    </div>
                 </div>
-            </div>
-            <div class="lunch">
-                <div class="date">
-
+                <div class="lunch">    
+                    <div class="dday">
+                        D-1
+                    </div>
                 </div>
-            </div>
-            <div class="lunch">
-                <div class="date">
-
+                <div class="lunch">    
+                    <div class="dday">
+                        D-2
+                    </div>
                 </div>
-            </div>
-            <div class="lunch">
-                <div class="date">
-
+                <div class="lunch">    
+                    <div class="dday">
+                        D-3
+                    </div>
+                </div>
+                <div class="lunch">    
+                    <div class="dday">
+                        D-4
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    
+
+    <section id="suggestion"> <!--급식 추천 받는 곳-->
+        <p>아래에 추천하고 싶은 급식 메뉴를 입력해주세요 !</p>
+        <form action="">
+            <input type="text" class="intext">
+            <input type="submit" value="제출">
+        </form>
+    </section>
+
+    <script src="date.js"></script>
+    <script src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script>
-        $.ajax({
-            url: "https://open.neis.go.kr/hub/mealServiceDietInfo?" + "ATPT_OFCDC_SC_CODE=B10&SD_SCHUL_CODE=7010073&KEY=7e8af3f56cb049ae99a4f57f8bde628c&Type=json&pIndex=1&pSize=10",
-            cache: false
-        })
-            .done(function (html) {
-                $("#results").append(html);
-            });
-    </script>
+    
+  
 </body>
 
 </html>
