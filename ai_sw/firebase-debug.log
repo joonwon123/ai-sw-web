@@ -1,0 +1,198 @@
+[debug] [2023-09-24T20:09:05.057Z] ----------------------------------------------------------------------
+[debug] [2023-09-24T20:09:05.061Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-09-24T20:09:05.061Z] CLI Version:   12.5.4
+[debug] [2023-09-24T20:09:05.062Z] Platform:      win32
+[debug] [2023-09-24T20:09:05.062Z] Node Version:  v20.7.0
+[debug] [2023-09-24T20:09:05.062Z] Time:          Mon Sep 25 2023 05:09:05 GMT+0900 (대한민국 표준시)
+[debug] [2023-09-24T20:09:05.062Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-24T20:09:05.217Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-24T20:09:05.218Z] > authorizing via signed-in user (2joonwon2@gmail.com)
+[debug] [2023-09-24T20:09:05.218Z] [iam] checking project aisw-acb1f for permissions ["firebase.projects.get"]
+[debug] [2023-09-24T20:09:05.220Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/aisw-acb1f:testIamPermissions [none]
+[debug] [2023-09-24T20:09:05.220Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/aisw-acb1f:testIamPermissions x-goog-quota-user=projects/aisw-acb1f
+[debug] [2023-09-24T20:09:05.220Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/aisw-acb1f:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-09-24T20:09:06.013Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/aisw-acb1f:testIamPermissions 200
+[debug] [2023-09-24T20:09:06.013Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/aisw-acb1f:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-09-24T20:09:06.014Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/aisw-acb1f [none]
+[debug] [2023-09-24T20:09:06.497Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/aisw-acb1f 200
+[debug] [2023-09-24T20:09:06.497Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/aisw-acb1f {"projectId":"aisw-acb1f","projectNumber":"1088424791069","displayName":"aisw","name":"projects/aisw-acb1f","resources":{"hostingSite":"aisw-acb1f","realtimeDatabaseInstance":"aisw-acb1f-default-rtdb"},"state":"ACTIVE","etag":"1_cf1deae2-b1d4-49d9-a7f9-8a1773c898ec"}
+[info] 
+[info] === Serving from 'C:\Users\user\Desktop\수정반 주제탐구\ai-sw'...
+[info] 
+[debug] [2023-09-24T20:09:06.505Z] defaultcredentials: writing to file C:\Users\user\AppData\Roaming\firebase\2joonwon2_gmail_com_application_default_credentials.json
+[debug] [2023-09-24T20:09:06.508Z] Setting GAC to C:\Users\user\AppData\Roaming\firebase\2joonwon2_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\user\\AppData\\Roaming\\firebase\\2joonwon2_gmail_com_application_default_credentials.json"}}
+[debug] [2023-09-24T20:09:06.509Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/aisw-acb1f/adminSdkConfig [none]
+[debug] [2023-09-24T20:09:06.813Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/aisw-acb1f/adminSdkConfig 200
+[debug] [2023-09-24T20:09:06.813Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/aisw-acb1f/adminSdkConfig {"projectId":"aisw-acb1f","databaseURL":"https://aisw-acb1f-default-rtdb.firebaseio.com","storageBucket":"aisw-acb1f.appspot.com"}
+[info] i  functions: Watching "C:\Users\user\Desktop\수정반 주제탐구\ai-sw\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\user\\Desktop\\수정반 주제탐구\\ai-sw\\functions\" for Cloud Functions..."}}
+[debug] [2023-09-24T20:09:06.835Z] Validating nodejs source
+[debug] [2023-09-24T20:09:08.813Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-09-24T20:09:08.813Z] Building nodejs source
+[debug] [2023-09-24T20:09:08.813Z] Failed to find version of module node: reached end of search path C:\Users\user\Desktop\수정반 주제탐구\ai-sw\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2023-09-24T20:09:08.817Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-09-24T20:09:08.823Z] Found firebase-functions binary at 'C:\Users\user\Desktop\수정반 주제탐구\ai-sw\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8996
+
+[debug] [2023-09-24T20:09:09.409Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2023-09-24T20:11:46.696Z] ----------------------------------------------------------------------
+[debug] [2023-09-24T20:11:46.698Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-09-24T20:11:46.698Z] CLI Version:   12.5.4
+[debug] [2023-09-24T20:11:46.699Z] Platform:      win32
+[debug] [2023-09-24T20:11:46.699Z] Node Version:  v20.7.0
+[debug] [2023-09-24T20:11:46.699Z] Time:          Mon Sep 25 2023 05:11:46 GMT+0900 (대한민국 표준시)
+[debug] [2023-09-24T20:11:46.699Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-24T20:11:46.836Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-24T20:11:46.837Z] > authorizing via signed-in user (2joonwon2@gmail.com)
+[debug] [2023-09-24T20:11:46.837Z] [iam] checking project aisw-acb1f for permissions ["firebase.projects.get"]
+[debug] [2023-09-24T20:11:46.839Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/aisw-acb1f:testIamPermissions [none]
+[debug] [2023-09-24T20:11:46.840Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/aisw-acb1f:testIamPermissions x-goog-quota-user=projects/aisw-acb1f
+[debug] [2023-09-24T20:11:46.840Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/aisw-acb1f:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-09-24T20:11:47.660Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/aisw-acb1f:testIamPermissions 200
+[debug] [2023-09-24T20:11:47.660Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/aisw-acb1f:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-09-24T20:11:47.661Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/aisw-acb1f [none]
+[debug] [2023-09-24T20:11:48.040Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/aisw-acb1f 200
+[debug] [2023-09-24T20:11:48.040Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/aisw-acb1f {"projectId":"aisw-acb1f","projectNumber":"1088424791069","displayName":"aisw","name":"projects/aisw-acb1f","resources":{"hostingSite":"aisw-acb1f","realtimeDatabaseInstance":"aisw-acb1f-default-rtdb"},"state":"ACTIVE","etag":"1_cf1deae2-b1d4-49d9-a7f9-8a1773c898ec"}
+[info] 
+[info] === Serving from 'C:\Users\user\Desktop\수정반 주제탐구\ai-sw'...
+[info] 
+[debug] [2023-09-24T20:11:48.046Z] defaultcredentials: writing to file C:\Users\user\AppData\Roaming\firebase\2joonwon2_gmail_com_application_default_credentials.json
+[debug] [2023-09-24T20:11:48.047Z] Setting GAC to C:\Users\user\AppData\Roaming\firebase\2joonwon2_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\user\\AppData\\Roaming\\firebase\\2joonwon2_gmail_com_application_default_credentials.json"}}
+[debug] [2023-09-24T20:11:48.048Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/aisw-acb1f/adminSdkConfig [none]
+[debug] [2023-09-24T20:11:48.348Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/aisw-acb1f/adminSdkConfig 200
+[debug] [2023-09-24T20:11:48.349Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/aisw-acb1f/adminSdkConfig {"projectId":"aisw-acb1f","databaseURL":"https://aisw-acb1f-default-rtdb.firebaseio.com","storageBucket":"aisw-acb1f.appspot.com"}
+[info] i  functions: Watching "C:\Users\user\Desktop\수정반 주제탐구\ai-sw\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\user\\Desktop\\수정반 주제탐구\\ai-sw\\functions\" for Cloud Functions..."}}
+[debug] [2023-09-24T20:11:48.368Z] Validating nodejs source
+[debug] [2023-09-24T20:11:50.289Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-09-24T20:11:50.289Z] Building nodejs source
+[debug] [2023-09-24T20:11:50.289Z] Failed to find version of module node: reached end of search path C:\Users\user\Desktop\수정반 주제탐구\ai-sw\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2023-09-24T20:11:50.292Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-09-24T20:11:50.297Z] Found firebase-functions binary at 'C:\Users\user\Desktop\수정반 주제탐구\ai-sw\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8580
+
+[debug] [2023-09-24T20:11:50.832Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2023-09-24T20:19:41.868Z] ----------------------------------------------------------------------
+[debug] [2023-09-24T20:19:41.871Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-09-24T20:19:41.872Z] CLI Version:   12.5.4
+[debug] [2023-09-24T20:19:41.872Z] Platform:      win32
+[debug] [2023-09-24T20:19:41.872Z] Node Version:  v20.7.0
+[debug] [2023-09-24T20:19:41.872Z] Time:          Mon Sep 25 2023 05:19:41 GMT+0900 (대한민국 표준시)
+[debug] [2023-09-24T20:19:41.872Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-24T20:19:41.990Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-24T20:19:41.991Z] > authorizing via signed-in user (2joonwon2@gmail.com)
+[debug] [2023-09-24T20:19:41.991Z] [iam] checking project aisw-acb1f for permissions ["firebase.projects.get"]
+[debug] [2023-09-24T20:19:41.994Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/aisw-acb1f:testIamPermissions [none]
+[debug] [2023-09-24T20:19:41.994Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/aisw-acb1f:testIamPermissions x-goog-quota-user=projects/aisw-acb1f
+[debug] [2023-09-24T20:19:41.994Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/aisw-acb1f:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-09-24T20:19:42.910Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/aisw-acb1f:testIamPermissions 200
+[debug] [2023-09-24T20:19:42.910Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/aisw-acb1f:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-09-24T20:19:42.911Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/aisw-acb1f [none]
+[debug] [2023-09-24T20:19:43.306Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/aisw-acb1f 200
+[debug] [2023-09-24T20:19:43.306Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/aisw-acb1f {"projectId":"aisw-acb1f","projectNumber":"1088424791069","displayName":"aisw","name":"projects/aisw-acb1f","resources":{"hostingSite":"aisw-acb1f","realtimeDatabaseInstance":"aisw-acb1f-default-rtdb"},"state":"ACTIVE","etag":"1_cf1deae2-b1d4-49d9-a7f9-8a1773c898ec"}
+[info] 
+[info] === Serving from 'C:\Users\user\Desktop\수정반 주제탐구\ai-sw'...
+[info] 
+[debug] [2023-09-24T20:19:43.312Z] defaultcredentials: writing to file C:\Users\user\AppData\Roaming\firebase\2joonwon2_gmail_com_application_default_credentials.json
+[debug] [2023-09-24T20:19:43.315Z] Setting GAC to C:\Users\user\AppData\Roaming\firebase\2joonwon2_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\user\\AppData\\Roaming\\firebase\\2joonwon2_gmail_com_application_default_credentials.json"}}
+[debug] [2023-09-24T20:19:43.316Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/aisw-acb1f/adminSdkConfig [none]
+[debug] [2023-09-24T20:19:43.611Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/aisw-acb1f/adminSdkConfig 200
+[debug] [2023-09-24T20:19:43.612Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/aisw-acb1f/adminSdkConfig {"projectId":"aisw-acb1f","databaseURL":"https://aisw-acb1f-default-rtdb.firebaseio.com","storageBucket":"aisw-acb1f.appspot.com"}
+[info] i  functions: Watching "C:\Users\user\Desktop\수정반 주제탐구\ai-sw\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\user\\Desktop\\수정반 주제탐구\\ai-sw\\functions\" for Cloud Functions..."}}
+[debug] [2023-09-24T20:19:43.634Z] Validating nodejs source
+[debug] [2023-09-24T20:19:45.495Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-09-24T20:19:45.495Z] Building nodejs source
+[debug] [2023-09-24T20:19:45.495Z] Failed to find version of module node: reached end of search path C:\Users\user\Desktop\수정반 주제탐구\ai-sw\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2023-09-24T20:19:45.498Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-09-24T20:19:45.504Z] Found firebase-functions binary at 'C:\Users\user\Desktop\수정반 주제탐구\ai-sw\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8320
+
+[debug] [2023-09-24T20:19:45.999Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
